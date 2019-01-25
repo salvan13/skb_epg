@@ -1,0 +1,18 @@
+nav {
+  background-color: var(--gray);
+  display: flex;
+
+  ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    list-style: none;
+    align-self: center;
+    
+    a,
+    a:visited {
+      color: var(--yellow);
+      padding: 0.2rem;
+    }
+  }
+}

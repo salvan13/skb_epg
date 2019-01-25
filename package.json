@@ -1,0 +1,28 @@
+{
+  "name": "skb_epg",
+  "version": "0.1.0",
+  "description": "A Skillbill EPG for Norigin Media",
+  "scripts": {
+    "api:mock-api": "./node_modules/.bin/osprey-mock-service -f ./node_modules/nm-mock-api/demo.raml -p 1337 --cors",
+    "api": "node ./node_modules/nm-mock-api/scripts/updateEpg.js && npm run api:mock-api",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Antonio Salvati <antonio.salvati@skillbill.it>",
+  "private": true,
+  "dependencies": {
+    "assemble": "^0.3.83",
+    "grunt": "^0.4.5",
+    "nm-mock-api": "git+https://github.com/NoriginMedia/mock-api.git#cloudberry",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "styles": "^0.2.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.11.0",
+    "sass": "^1.16.1"
+  }
+}
